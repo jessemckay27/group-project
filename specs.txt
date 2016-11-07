@@ -1,0 +1,23 @@
+Landing Screen
+  2 Options:
+
+
+    Reserve a Table - RSVP
+      Person Constructor
+
+        Enter you name:
+          Text input
+        How many people
+          Dropdown
+        Time and Date
+          Calendar or ASAP
+        Special Requests
+          Text input - Allergies, disabilities, meal pref, etc.
+          
+        Return randomized confirmation order # (PIN code)
+
+    Login
+      please enter confirmation code: (PIN)
+      if code matches current party object, pull up next page
+      confirm party name, table, and extraneous details.
+      fade in order screen
