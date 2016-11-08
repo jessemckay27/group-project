@@ -12,11 +12,14 @@
 <!-- MENU/Order Div -->
       <div class="row" id="menu-page-row">
         <div class="col-md-6" id="menu-column"><!-- Menu Column -->
-          <h1><u>Menu</u></h1>
+          <h1><u>Menu</u></h1><br>
           <form id="menu-form">
             <div class="form-check">
               <div class="row">
-
+                <div class="form-group" id="order-name-group">
+                  <label>Name</label>
+                  <input type="text" name="name" id="order-name-input">
+                </div>
               <!-- For The Table -->
                 <div class="col-md-4">
                   <h3>For the Table</h3>
@@ -27,7 +30,7 @@
                   <p><em>tomato, red onion, cucumber, sumac, za'atar, pita.</em></p>
 
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" value="8">
                       Okra - $8
                   </label>
                   <p><em>red pepper flake, shaved garlic.</em></p>
@@ -132,14 +135,22 @@
 
         <!-- Cart Column -->
         <div class="col-md-6" id="orders-column">
-          <h1 id="header"><u>Current Order</u></h1>
+          <h1 id="header"><u>Current Orders</u></h1>
           <h4>(Click red "X" to remove an order)</h4>
           <ul id="orders-list">
           </ul>
+          <button type="button" class="btn btn-success" id="submit-orders-button">Submit Orders</button>
         </div><!-- End Cart Column -->
+      </div><!-- End of Menu row -->
 
+      <div class="row" id="order-confirmation-row">
+        <div class="col-md-12" id="order-confirmation-column">
+          <h2><u>Thank You!</u></h2>
+          <h4>Here are the orders for your table. Your food will arrive shortly.</h4>
 
-      </div>
+        </div><!-- End Order Confirmation column -->
+      </div><!-- End Order Confirmation row -->
+
     </div>
   </body>
 </html>
