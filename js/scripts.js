@@ -17,7 +17,7 @@ $(document).ready(function() {
       $(this).parent().remove();
     });
 
-    $("input:checkbox").removeAttr("checked");
+    $("input:checkbox").prop("checked", false);
   });
 
 
