@@ -7,7 +7,7 @@
   border-radius: 10px;
 }
 
-#menu-column > h1, #orders-column > h1, #orders-column > h4, #order-confirmation-column > h2, #order-confirmation-column > h4 {
+#menu-column h1, #orders-column h1, #orders-column h4, #order-confirmation-column h2, #order-confirmation-column h4 {
   text-align: center;
 }
 
@@ -50,4 +50,19 @@ i:hover {
 
 #order-confirmation-row {
   display: none;
+}
+
+#order-more-button {
+  width: 100%;
+}
+
+#orders-list {
+  padding: 0px;
+}
+
+.btn {
+  height: 50px;
+}
+.order {
+  background-color: #fff;
 }

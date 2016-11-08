@@ -22,13 +22,22 @@ $(document).ready(function() {
     $("#submit-orders-button").show();
   });
 
-  $("#submit-orders-button").click(function(event) {
-    event.preventDefault();
-
-    $("#order-confirmation-column").append($("#orders-list"));
+  $("#submit-orders-button").click(function() {
+    $("#order-confirmation-list").append($("#orders-list").children());
     $("i").remove();
-    $("#menu-page-row").slideUp();
+    $("#menu-page-row").slideUp(function() {
+      $("#submit-orders-button").hide();
+    });
     $("#order-confirmation-row").slideDown();
+
+
+  });
+
+  $("#order-more-button").click(function() {
+    $("#order-confirmation-row").slideUp(function() {
+      $("#menu-page-row").slideDown();
+    });
+
   });
 
 
