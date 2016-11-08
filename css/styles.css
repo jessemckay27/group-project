@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  background: #fff;
+  background-color: #333;
+}
+
+.container, .row {height: inherit;}
+.initial-hidden {display: none;}
+
+
+#login {
+  position: relative;
+  margin-top: -37px;
+  top: 50%;
+}
+
+#name {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  background-color: #f5f5f5;
+}
+
+#guests {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  background-color: #f5f5f5;
+}
+
+#name input {
+  height: 50px;
+  font-size: 1.25em;
+  color: #555459;
+}
+
+.submit {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #56B68B;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+#name div {
+
+}
