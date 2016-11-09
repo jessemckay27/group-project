@@ -1,3 +1,17 @@
+html, body {
+  height: 100%;
+  background: #fff;
+  background-color: #333;
+}
+
+h1 {
+  margin: 0 0 5px 0;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
 .order-item {
   background-color: rgba(240, 240, 240, 0.9);
   border: 1px solid #a6a6a6;
@@ -11,27 +25,19 @@
   text-align: center;
 }
 
-#order-name-group {
-  text-align: center;
+#order-name-input {
+  height: 50px;
+  font-size: 1.25em;
+  color: #555459;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
+
 
 i:hover {
   cursor: pointer;
 }
 
-#menu-column {
-  background-color: rgba(240, 240, 240, 0.9);
-  border: 1px solid #a6a6a6;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#orders-column {
-  background-color: rgba(240, 240, 240, 0.9);
-  border: 1px solid #a6a6a6;
-  padding: 10px;
-  border-radius: 10px;
-}
 
 .glyphicon-remove-sign {
   float: right;
@@ -41,6 +47,7 @@ i:hover {
 
 #add-order-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 #submit-orders-button {
@@ -50,6 +57,15 @@ i:hover {
 
 #order-confirmation-row {
   display: none;
+  height: inherit;
+}
+
+#order-confirmation-column {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  margin-top: 100px;
 }
 
 #order-more-button {
@@ -58,16 +74,6 @@ i:hover {
 
 #orders-list {
   padding: 0px;
-}
-
-.btn {
-  height: 50px;
-}
-
-html, body {
-  height: 100%;
-  background: #fff;
-  background-color: #333;
 }
 
 .container, #row1 {height: inherit;}
@@ -83,8 +89,10 @@ html, body {
   background-color: #fff;
 }
 
-#register {
-
+.form-bg {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
 #sign-in {
@@ -93,38 +101,6 @@ html, body {
 
 #landing {
   display: block;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c5c5c5;
-  background-color: #f5f5f5;
-}
-
-#name {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c5c5c5;
-  background-color: #f5f5f5;
-}
-
-#pin {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c5c5c5;
-  background-color: #f5f5f5;
-}
-
-#guests {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c5c5c5;
-  background-color: #f5f5f5;
-}
-
-#date {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c5c5c5;
-  background-color: #f5f5f5;
 }
 
 #fix-left {
@@ -156,9 +132,16 @@ html, body {
   box-shadow: 0px 0px 8px 1px red;
 }
 
+#submit-fix {
+  width: 100%;
+  border: none;
+}
+
+#menu-page-row {
+  display: none;
+}
+
 .submit {
-  height: 50px;
-  line-height: 50px;
   border-radius: 5px;
   background-color: #56B68B;
   margin-top: 10px;
@@ -167,21 +150,30 @@ html, body {
   font-weight: 700;
   font-size: 1.25em;
   cursor: pointer;
-}
-
-#submit-fix {
-  width: 100%;
-  border: none;
-  line-height: inherit;
-}
-
-#submit-fix-pin {
-  width: 100%;
-  border: none;
-  line-height: inherit;
   line-height: 50px;
+  height: 50px;
+  border: none;
+  letter-spacing: 0.5px;
 }
 
 #menu-page-row {
-  display: none;
+  margin-top: 100px;
+}
+
+.width-fix {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#menu-column {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#orders-column {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 10px;
 }
