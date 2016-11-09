@@ -10,18 +10,18 @@
   <body>
     <div class="container">
       <div id="row1" class="row">
-        <div id="login" class="col-md-8 col-md-offset-2">
-          <div id="landing" class="form-group">
+        <div id="login" class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div id="landing" class="form-group form-bg">
             <div id="register" class="submit">Register</div>
             <div id="sign-in" class="submit">Order</div>
           </div>
           <div id="login-wrap">
             <form id="one">
-              <div id="name" class="form-group initial-hidden">
+              <div id="name" class="form-group initial-hidden form-bg">
                 <input id="name-input" class="form-control input-box" type="text" placeholder="Enter Your Party Name">
                 <div class="submit">Submit</div>
               </div>
-              <div id="guests" class="form-group initial-hidden">
+              <div id="guests" class="form-group initial-hidden form-bg">
                 <div id="fix-left" class="input-box">How many in your party?</div>
                 <select id="fix-right" class="form-control input-box">
                   <option>1</option>
@@ -33,7 +33,7 @@
                 </select>
                 <div class="submit">Submit</div>
               </div>
-              <div id="date" class="form-group initial-hidden">
+              <div id="date" class="form-group initial-hidden form-bg">
                 <input class="form-control input-box" type="date">
                 <button id="submit-fix" type="submit" class="submit" name="button">Submit</button>
               </div>
@@ -43,146 +43,150 @@
       </div>
 <!-- MENU/Order Div -->
       <div class="row" id="menu-page-row">
-        <div class="col-md-6" id="menu-column"><!-- Menu Column -->
-          <h1><u>Menu</u></h1><br>
-          <form id="menu-form">
-            <div class="form-check">
-              <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6" id="menu-column"><!-- Menu Column-->
+          <div class="width-fix">
+            <h1>Menu</h1><br>
+            <form id="menu-form">
+              <div class="form-check">
                 <div class="form-group" id="order-name-group">
-                  <label>Name</label>
-                  <input type="text" name="name" id="order-name-input">
+                  <!-- <label>Name</label> -->
+                  <input class="form-control" type="text" name="name" id="order-name-input" placeholder="Enter Your Name">
                 </div>
-              <!-- For The Table -->
-                <div class="col-md-4">
-                  <h3>For the Table</h3>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="8">
-                      Fattoush - $8
-                  </label>
-                  <p><em>tomato, red onion, cucumber, sumac, za'atar, pita.</em></p>
+                <div class="row">
+                <!-- For The Table -->
+                  <div class="col-md-4">
+                    <h3>For Table</h3>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="8">
+                        Fattoush - $8
+                    </label>
+                    <p><em>tomato, red onion, cucumber, sumac, za'atar, pita.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="8">
-                      Okra - $8
-                  </label>
-                  <p><em>red pepper flake, shaved garlic.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="8">
+                        Okra - $8
+                    </label>
+                    <p><em>red pepper flake, shaved garlic.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="10">
-                      Skillet Cornbread - $10
-                  </label>
-                  <p><em>bourbon barrel aged soy sauce, maple syrup.</em></p>
-                </div>
-                  <!-- Starters -->
-                <div class="col-md-4">
-                  <h3>Starters</h3>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="14">
-                    Tomato Toast - $14
-                  </label>
-                  <p><em>creme fraiche, shallots, thyme, basil, mizuna.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="10">
+                        Skillet Cornbread - $10
+                    </label>
+                    <p><em>bourbon barrel aged soy sauce, maple syrup.</em></p>
+                  </div>
+                    <!-- Starters -->
+                  <div class="col-md-4">
+                    <h3>Starters</h3>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="14">
+                      Tomato Toast - $14
+                    </label>
+                    <p><em>creme fraiche, shallots, thyme, basil, mizuna.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="40">
-                    404 Caviar Service - $40
-                  </label>
-                  <p><em>shallots, capers, duck egg custard, chive, sourdough.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="40">
+                      404 Caviar Service - $40
+                    </label>
+                    <p><em>shallots, capers, duck egg custard, chive, sourdough.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="16">
-                    Roasted Garlic Burrata - $16
-                  </label>
-                  <p><em>turmeric, pickled squash, mustard, basil oil.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="16">
+                      Roasted Garlic Burrata - $16
+                    </label>
+                    <p><em>turmeric, pickled squash, mustard, basil oil.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="20">
-                    Dry Aged Beef Tartare - $20
-                  </label>
-                  <p><em>black garlic, cinnamon, onion, house pickles.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="20">
+                      Dry Aged Beef Tartare - $20
+                    </label>
+                    <p><em>black garlic, cinnamon, onion, house pickles.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="15">
-                    Bloomy Rind Cheese Plate - $15
-                  </label>
-                  <p><em>scuppernong jam, toast.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="15">
+                      Bloomy Rind Cheese Plate - $15
+                    </label>
+                    <p><em>scuppernong jam, toast.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="16">
-                    Oyster Mushrooms - $16
-                  </label>
-                  <p><em>fennel, preseverd lemon, croutons</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="16">
+                      Oyster Mushrooms - $16
+                    </label>
+                    <p><em>fennel, preseverd lemon, croutons</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="15">
-                     Braised Crowder Peas - $15
-                  </label>
-                  <p><em>shallots, capers, duck egg custard, chive, sourdough.</em></p>
-                </div>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="15">
+                       Braised Crowder Peas - $15
+                    </label>
+                    <p><em>shallots, capers, duck egg custard, chive, sourdough.</em></p>
+                  </div>
 
-                   <!-- Entrees -->
-                <div class="col-md-4">
-                  <h3>Entrees</h3>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="33">
-                    Swordfish - $33
-                  </label>
-                  <p><em>baby red potatoes, bacalao, olinda olives, black pepper.</em></p>
+                     <!-- Entrees -->
+                  <div class="col-md-4">
+                    <h3>Entrees</h3>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="33">
+                      Swordfish - $33
+                    </label>
+                    <p><em>baby red potatoes, bacalao, olinda olives, black pepper.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="27">
-                    Rabbit Man Farm's Rabbit - $27
-                  </label>
-                  <p><em>king trumpet, dandelion greens, ricotta gnudi, lemon agrumato.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="27">
+                      Rabbit Man Farm's Rabbit - $27
+                    </label>
+                    <p><em>king trumpet, dandelion greens, ricotta gnudi, lemon agrumato.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="33">
-                     Sunburst Trout - $33
-                  </label>
-                  <p><em>carolina gold rice, romesco, sea island red peas.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="33">
+                       Sunburst Trout - $33
+                    </label>
+                    <p><em>carolina gold rice, romesco, sea island red peas.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="28">
-                     Glendale Farms Chicken - $28
-                  </label>
-                  <p><em>Jimmy Red corn grits, Greener Root's greens, neotata calabrese.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="28">
+                       Glendale Farms Chicken - $28
+                    </label>
+                    <p><em>Jimmy Red corn grits, Greener Root's greens, neotata calabrese.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="27">
-                     Pork Bolognese - $27
-                  </label>
-                  <p><em>San Marzano tomato, frascatelli, basil, grana padano.</em></p>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="27">
+                       Pork Bolognese - $27
+                    </label>
+                    <p><em>San Marzano tomato, frascatelli, basil, grana padano.</em></p>
 
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="20">
-                     Bear Creek Farm's Tri-Tip - $20
-                  </label>
-                  <p><em>sweet potatoes, maitake mushrooms, arugula.</em></p>
-                </div>
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="20">
+                       Bear Creek Farm's Tri-Tip - $20
+                    </label>
+                    <p><em>sweet potatoes, maitake mushrooms, arugula.</em></p>
+                  </div>
 
-              </div> <!-- end menu items row -->
-            </div>
-            <button type="submit" class="btn btn-info" id="add-order-button">Add Order</button>
-          </form>
+                </div> <!-- end menu items row -->
+              </div>
+              <button type="submit" class="submit" id="add-order-button">Add Order</button>
+            </form>
+          </div>
         </div><!-- End Menu Column -->
 
         <!-- Cart Column -->
-        <div class="col-md-6" id="orders-column">
-          <h1 id="header"><u>Current Orders</u></h1>
-          <h4>(Click red "X" to remove an order)</h4>
-          <ul id="orders-list">
-          </ul>
-          <button type="button" class="btn btn-success" id="submit-orders-button" value="">Submit Orders</button>
+        <div class="col-xs-12 col-sm-12 col-md-6" id="orders-column">
+            <div class="width-fix">
+            <h1 id="header">Current Orders</h1>
+            <h4>(Click red "X" to remove an order)</h4>
+            <ul id="orders-list">
+            </ul>
+            <button type="button" class="submit" id="submit-orders-button" value="">Submit Orders</button>
+          </div>
         </div><!-- End Cart Column -->
       </div><!-- End of Menu row -->
 
       <div class="row" id="order-confirmation-row">
         <div class="col-md-4 col-md-offset-4" id="order-confirmation-column">
-          <h2><u>Thank You!</u></h2>
+          <h2>Thank You!</h2>
           <h4>Here are the orders for your table. Your food will arrive shortly.</h4>
           <div id="order-confirmation-list">
             </div>
             <h4>Table Total: $<span id="table-total"></span></h4>
-            <button type="button" class="btn btn-success" id="order-more-button">Order More Food</button>
+            <button type="button" class="submit" id="order-more-button">Order More Food</button>
         </div><!-- End Order Confirmation column -->
       </div><!-- End Order Confirmation row -->
     </div>
