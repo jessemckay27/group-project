@@ -16,21 +16,28 @@ $(document).ready(function() {
   var tableTotal = 0
   $("form#menu-form").submit(function(event) {
     event.preventDefault();
+    if ($("input:checkbox").is(":checked") && $("#order-name-input").val().length >= 2) {
+      $("#orders-list").append("<div class='order-item'>" + "<i class='glyphicon glyphicon-remove-sign'></i>" + "<li>" + $("input#order-name-input").val().toUpperCase() + "<ul>" + "</ul>" + "</li>" + "</div>");
 
-    $("#orders-list").append("<div class='order-item'>" + "<i class='glyphicon glyphicon-remove-sign'></i>" + "<li>" + $("input#order-name-input").val().toUpperCase() + "<ul>" + "</ul>" + "</li>" + "</div>");
+      $("input:checked").each(function() {
+        $("#orders-list ul").last().append("<li>" + $(this).parent().text() + "</li>");
+        tableTotal += parseInt($(this).val());
+      });
 
-    $("input:checked").each(function() {
-      $("#orders-list ul").last().append("<li>" + $(this).parent().text() + "</li>");
-      tableTotal += parseInt($(this).val());
-    });
+      $("i").click(function() {
+        $(this).parent().remove();
+      });
 
-    $("i").click(function() {
-      $(this).parent().remove();
-    });
-
-    $("input:checkbox").prop("checked", false);
-    $("input#order-name-input").val("")
-    $("#submit-orders-button").show();
+      $("input:checkbox").prop("checked", false);
+      $("input#order-name-input").val("")
+      $("#submit-orders-button").show();
+    }
+    else if ($("input:checkbox").is(":checked") === false) {
+      alert("Please select at least one item.");
+    }
+    else if ($("#order-name-input").val().length <= 1) {
+      alert("Please enter a name.");
+    }
   });
 
   $("#submit-orders-button").click(function() {
