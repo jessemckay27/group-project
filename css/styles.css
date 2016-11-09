@@ -113,4 +113,11 @@ html, body {
   width: 100%;
   border: none;
   line-height: inherit;
+  line-height: 50px;
+}
+
+#menu-page-row {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
 }

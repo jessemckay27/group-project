@@ -5,39 +5,35 @@ function Customer(userName, guests, date) {
   this.pin = number(0,9) + number(0,9) + number(0,9) + number(0,9);
 }
 
-Customer.prototype.pinCheck = function() {
-  if(this.pin === myPin) {
-    alert("this works!");
-  }
-}
-
 var number = function(min, max) {
   return digit = Math.floor(Math.random()*(max-min+1) + min).toString();
 }
 
 $(document).ready(function() {
+  var myTable;
+
   $("form#one").submit(function(event) {
+
     event.preventDefault();
 
-    var inputUserName = $("#name input").val();
-    var inputGuests = $("#guests select").val();
-    var inputDate = $("#date input").val();
-    var myTable = new Customer(inputUserName, inputGuests, inputDate);
-    console.log(myTable);
-    $("form#two").submit(function(event) {
-      event.preventDefault();
+    if ($("#date input").val().length === 10) {
+      var inputUserName = $("#name input").val();
+      var inputGuests = $("#guests select").val();
+      var inputDate = $("#date input").val();
 
-      var myPin = $("#pin input").val();
-      $("#submit-fix-pin").click(function(){
-        myTable.pinCheck();
-      });
-    });
+      var myTable = new Customer(inputUserName, inputGuests, inputDate);
+      console.log(myTable);
+    }
   });
 
+  $("#submit-fix-pin").click(function(event) {
+    event.preventDefault();
 
-
-
-
+    $("#submit-fix-pin").click(function(){
+      $("#two").hide();
+      $("#menu-page-row").fadeIn(300);
+    });
+  });
 
   $("#register").click(function() {
     $("#landing").hide();
@@ -45,7 +41,7 @@ $(document).ready(function() {
   });
 
   $("#name .submit").click(function() {
-      if($("#name input").val().length <= 2) {
+      if($("#name input").val().length < 2) {
         $(this).addClass("error-warning");
       } else {
         $("#name").hide();
@@ -59,16 +55,17 @@ $(document).ready(function() {
   });
 
   $("#date button").click(function() {
-    $("#date").hide();
-    $("#landing").fadeIn(300);
+    if($("#date input").val().length !== 10) {
+      $("#date button").addClass("error-warning");
+    } else {
+      $("#date").hide();
+      $("#landing").fadeIn(300);
+    }
   });
 
   $("#sign-in").click(function(){
     $("#landing").hide();
-    $("#pin").show();
+    $("#menu-page-row").fadeIn(300);
   });
-
-
-
 
 });
