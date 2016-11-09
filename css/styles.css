@@ -7,15 +7,40 @@ html, body {
 .container, .row {height: inherit;}
 .initial-hidden {display: none;}
 
-
 #login {
   position: relative;
   margin-top: -37px;
   top: 50%;
 }
 
-#name {
+#landing {
+  background-color: #fff;
+}
+
+#register {
+
+}
+
+#sign-in {
+  background-color: #3fa9f5;
+}
+
+#landing {
   display: block;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  background-color: #f5f5f5;
+}
+
+#name {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  background-color: #f5f5f5;
+}
+
+#pin {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #c5c5c5;
@@ -29,10 +54,40 @@ html, body {
   background-color: #f5f5f5;
 }
 
-#name input {
+#date {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  background-color: #f5f5f5;
+}
+
+#fix-left {
+  background-color: #fff;
+  line-height: 50px;
+  padding-left: 10px;
+  width: 70.5%;
+  margin-right: 1%;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+	overflow: hidden;
+}
+
+#fix-right {
+  display: inline-block;
+  float: right;
+  width: 28.5%;
+}
+
+.input-box {
   height: 50px;
   font-size: 1.25em;
   color: #555459;
+}
+
+.error-warning {
+  box-shadow: 0px 0px 8px 1px red;
 }
 
 .submit {
@@ -48,6 +103,14 @@ html, body {
   cursor: pointer;
 }
 
-#name div {
+#submit-fix {
+  width: 100%;
+  border: none;
+  line-height: inherit;
+}
 
+#submit-fix-pin {
+  width: 100%;
+  border: none;
+  line-height: inherit;
 }

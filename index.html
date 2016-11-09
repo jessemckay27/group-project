@@ -11,17 +11,19 @@
     <div class="container">
       <div class="row">
         <div id="login" class="col-md-8 col-md-offset-2">
+          <div id="landing" class="form-group">
+            <div id="register" class="submit">Register</div>
+            <div id="sign-in" class="submit">Login</div>
+          </div>
           <div id="login-wrap">
-            <!-- <h1>Create an account:</h1> -->
-            <form>
+            <form id="one">
               <div id="name" class="form-group initial-hidden">
-                <input class="form-control" type="text" placeholder="Enter Your Party Name">
+                <input id="name-input" class="form-control input-box" type="text" placeholder="Enter Your Party Name">
                 <div class="submit">Submit</div>
               </div>
-
               <div id="guests" class="form-group initial-hidden">
-
-                <select class="form-control">
+                <div id="fix-left" class="input-box">How many in your party?</div>
+                <select id="fix-right" class="form-control input-box">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -32,14 +34,16 @@
                 <div class="submit">Submit</div>
               </div>
               <div id="date" class="form-group initial-hidden">
-                <label for="born">Reservation Date</label>
-                <input class="form-control" type="date">
+                <input class="form-control input-box" type="date">
+                <button id="submit-fix" type="submit" class="submit" name="button">Submit</button>
               </div>
-              <button type="submit" class="btn initial-hidden" name="button">Submit</button>
             </form>
-            <div id="output">
-
-            </div>
+            <form id="two">
+              <div id="pin" class="form-group initial-hidden">
+                <input id="pin-input" class="form-control input-box" type="text" placeholder="Enter Your PIN">
+                <button id="submit-fix-pin" type="submit" class="submit" name="button">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
